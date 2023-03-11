@@ -12,11 +12,10 @@ pipeline {
                  }
                  }
                  stage('Three') {
-                 when {
-                          not{
+                          when {
                        
                             branch "main"
-                          }
+                          
                        
                  }
                  steps {
