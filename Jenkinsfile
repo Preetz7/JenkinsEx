@@ -13,8 +13,10 @@ pipeline {
                  }
                  stage('Three') {
                  when {
+                          not{
                        
                             branch "main"
+                          }
                        
                  }
                  steps {
