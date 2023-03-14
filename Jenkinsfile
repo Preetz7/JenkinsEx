@@ -17,7 +17,7 @@ pipeline {
                             branch "master"     
                  }
                  steps {
-                       echo "In this repo, the default branch is main"
+                       echo 'In this repo, the default branch is main'
                  }
                  }
                  
