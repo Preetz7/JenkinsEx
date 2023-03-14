@@ -12,9 +12,10 @@ pipeline {
                  }
                  }
                  stage('Three') {
-                          when not{
-                       
-                            branch "master"     
+                    when{ 
+                          not{
+                            branch "master" 
+                          }
                  }
                  steps {
                        echo 'In this repo, the default branch is main'
